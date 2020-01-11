@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  public cat: string = "https://icatcare.org/app/uploads/2018/09/Scottish-fold.png"
+  public cat: string = "https://icatcare.org/app/uploads/2018/09/Scottish-fold.png";
+  public Piesang: string = "https://icatcare.org/app/uploads/2018/09/Scottish-fold.png";
   constructor() { }
 
   ngOnInit() {
