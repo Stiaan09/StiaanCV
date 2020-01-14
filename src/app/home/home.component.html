@@ -1,34 +1,23 @@
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/home/home.component.css">
-  </head>
+<!-- ************************************
+  Onthou jy kan nie nog "head" en "body" tags hier in die file sit nie,
+  want hierdie home.component.html word binne in "app.component.html" gesit wat binne "index.html" gesit word.
+  Binne "Index.html" word daar klaar n "head" en "body" tag gedeclare. So as jy enige extra scripts of stylers wil import gaan jy dit 
+  in "index.html" moet doen. Dis hoekom ek dit uit gehaal het.
+     ************************************ -->
 
-  <body>
-  <div id="navbar">
+<div id="navbar">
   <a class="active" href=" ">Home</a>
   <a href="#about">About</a>
   <a href="#contact">Contact</a>
-  </div>
-  
-<script>
-  window.onscroll = function() {myFunction()};
-  
-  var navbar = document.getElementById("navbar");
-  var sticky = navbar.offsetTop;
-  
-  function myFunction() {
-    if (window.pageYOffset >= sticky) {
-      navbar.classList.add("sticky")
-    } else {
-      navbar.classList.remove("sticky");
-    }
-  }
-  </script>
-</body>
+</div>
 
-<div class="ProfilePhotoCenter" style="background-color: #aaa;">
+<!-- So let op na Naming convention en dan in 2020 doen ons nie "In-line stlyling" nie, dit is nie best practice nie
+    Hier is `n link naming conventions: https://www.freecodecamp.org/news/css-naming-conventions-that-will-save-you-hours-of-debugging-35cea737d849/
+    Jy kan die res ook gaan fix. Kyk net wat ek verander het op GitKraken
+-->
+<div class="profile-photo-center">
   <span></span>
-    <img [src]="Stiaan" alt="Stiaan">
+  <img [src]="Stiaan" alt="Stiaan">
   <span></span>
 </div>
 
@@ -42,33 +31,43 @@
 
 
 <div class="row">
+  <!-- TODO: Fix inline styling-->
   <div class="column" style="background-color:#aaa;">
     <h2>Personal Profile: </h2>
-    <p>A bright, talented and ambitious young man with self-discipline and the ability to learn and master new skills. <br>
-      Possessing a strong personality, good team spirit, deadline orientated and having the ability to organize and present complex solutions clearly and accurately. </p>
+    <p>A bright, talented and ambitious young man with self-discipline and the ability to learn and master new skills.
+      <br>
+      Possessing a strong personality, good team spirit, deadline orientated and having the ability to organize and
+      present complex solutions clearly and accurately. </p>
   </div>
+   <!-- TODO: Fix inline styling-->
   <div class="column" style="background-color:#bbb;">
     <h2>Academic Background: </h2>
-    <p>2015 – Matriculated from Diamantveld High School, Kimberley, Northern Cape Province, South Africa 
-      Subjects passed: Afrikaans, English, Maths, Lifeorientation, Geography, Biology, CAT	<br>					
-      2016:	Enrolled at Sol Plaatje University in Kimberley for Diploma Information Communication Technology. <br>
-      2019:	Completed studies at Sol Plaatje University in Kimberley for Diploma Information Communication Technology.</p>
+    <p>2015 – Matriculated from Diamantveld High School, Kimberley, Northern Cape Province, South Africa
+      Subjects passed: Afrikaans, English, Maths, Lifeorientation, Geography, Biology, CAT <br>
+      2016: Enrolled at Sol Plaatje University in Kimberley for Diploma Information Communication Technology. <br>
+      2019: Completed studies at Sol Plaatje University in Kimberley for Diploma Information Communication Technology.
+    </p>
   </div>
 </div>
 
 <div class="row">
+   <!-- TODO: Fix inline styling-->
   <div class="column" style="background-color:#bbb;">
     <h2>Competent in: </h2>
-    <p>HTML<span>CSS </span><br><br>SQL<span>&nbsp;&nbsp;&nbsp;&nbsp;Java </span><br><br> JavaScript <br><br> Visual Basic <br><br> GitHub <br><br> Angular </p>
+    <p>HTML<span>CSS </span><br><br>SQL<span>&nbsp;&nbsp;&nbsp;&nbsp;Java </span><br><br> JavaScript <br><br> Visual
+      Basic <br><br> GitHub <br><br> Angular </p>
   </div>
+   <!-- TODO: Fix inline styling, en gee dalk die text  `n ander font - google net watter font is goed -->
   <div class="column" style="background-color:#aaa;">
     <h2>Project undertaken whilst studying: </h2>
-    <p>Created a point of sales system for a Lavender and Lace, a wool company in Kimberley. The main purpose of the system was to: <br><br>
-      o	Track stock quantities and alert the user of low amounts of stock in certain areas;<br>
-      o	Calculate the total value of all stock on the premises;<br>
-      o	Deduct stock from the database once a purchase was made;<br>
-      o	Allow the user the functionality of entering new stock into the database;<br><br>
-      The system was developed using NetBeans - an IDE.  The system benefited the company significantly since they were still using old techniques of capturing stock manually, which took a whole day.
+    <p>Created a point of sales system for a Lavender and Lace, a wool company in Kimberley. The main purpose of the
+      system was to: <br><br>
+      o Track stock quantities and alert the user of low amounts of stock in certain areas;<br>
+      o Calculate the total value of all stock on the premises;<br>
+      o Deduct stock from the database once a purchase was made;<br>
+      o Allow the user the functionality of entering new stock into the database;<br><br>
+      The system was developed using NetBeans - an IDE. The system benefited the company significantly since they were
+      still using old techniques of capturing stock manually, which took a whole day.
 
     </p>
   </div>
@@ -81,6 +80,3 @@
     </div>
   </div>
 </section>
-
-
-

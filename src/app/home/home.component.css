@@ -44,6 +44,10 @@ body {
    text-align: center;
  }
  
+.profile-photo-center{
+  background-color: #aaa;
+}
+
  #navbar {
    overflow: hidden;
    background-color: #333;
