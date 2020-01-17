@@ -2,3 +2,143 @@
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
 }
+
+/* #navbar{
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+} */
+body {
+   margin: 0;
+   font-size: 28px;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+
+ p {
+   text-align: left;
+ }
+ 
+ .header {
+   background-color: #f1f1f1;
+   padding: 30px;
+   text-align: center;
+ }
+ 
+.profile-photo-center{
+  background-color: #aaa;
+}
+
+ #navbar {
+   overflow: hidden;
+   background-color: #333;
+ }
+ 
+ #navbar a {
+   float: left;
+   display: block;
+   color: #f2f2f2;
+   text-align: center;
+   padding: 20px 20px;
+   text-decoration: none;
+   font-size: 20px;
+ }
+ 
+ #navbar a:hover {
+   background-color: #ddd;
+   color: black;
+ }
+ 
+ #navbar a.active {
+   background-color: #4CAF50;
+   color: white;
+ }
+ 
+ .content {
+   padding: 16px;
+ }
+ 
+ .sticky {
+   position: fixed;
+   top: 0;
+   width: 100%;
+ }
+ 
+ .sticky + .content {
+   padding-top: 60px;
+ }
+
+ img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: 30%;
+ }
+
+ div.container {
+  padding: 1px;
+  text-align: center;
+  background: #333;
+  color: #f2f2f2;
+  font-size: 15px;
+ }
+
+ /* div.timeline-body {
+   padding: 0 800px 15px 10px;
+   text-align: left;
+ } */
+
+ /* div.personal-profile{
+   text-align: left;
+   font-size: 15px;
+   padding: 0 800px 0 10px;
+ } */
+
+ .column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 320px; 
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+span {
+  margin-left: 10em;
+}
+
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 150px; 
+}
